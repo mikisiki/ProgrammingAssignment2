@@ -19,7 +19,9 @@ makeCacheMatrix <- function(x = matrix()) {
            getinv = getinv)
 }
 
-## Write a short comment describing this function
+## The following function first checks whether cachematrix hold the inverse matrix in its 
+## environment. If it does it returns the inverse matrix from the memory. If it does not, then
+## the function computes the inverse and updates the inv variable in the cachematrix environment
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
